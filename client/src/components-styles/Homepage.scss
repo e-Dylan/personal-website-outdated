@@ -1,0 +1,38 @@
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.parallax-image {
+	// background-image: url("https://source.unsplash.com/1vv8nw62z0E/2400x1595");
+	background-image: url("https://source.unsplash.com/random");
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+}
+
+.image-section-container {
+	h1, h3 {
+		color: rgba(220, 220, 220, 1);
+	}
+}
+
+.image-info {
+	
+}
+
+.image-header {
+	
+}
+
+.my-work {
+	background-color: #222;
+
+}
