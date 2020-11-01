@@ -16,13 +16,13 @@ import '../components-styles/ProjectCard.scss';
 
 function ProjectCard(props) {
 	return (
-		<div className="project-card">
-				<div className="project-image">
-					<img className="project-image" src={ props.image } alt="Project Image" />
-				</div>
-				<div className="project-title">{ props.title }</div>
-				<div className="project-category">{ props.category }</div>
-				<div className="project-description">{ props.description }</div>
+		<div onClick={props.onClick}>
+			<div className="project-image">
+				<img className="project-image" src={ props.image } alt="Project Image" />
+			</div>
+			<div className="project-title">{ props.title }</div>
+			<div className="project-category">{ props.category }</div>
+			{/* <div className="project-description">{ props.description }</div> */}
 		</div>
 	)
 

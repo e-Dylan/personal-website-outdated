@@ -20,7 +20,7 @@ function Homepage(props) {
 			</div>
 		</section>
 
-		<section className="my-work">
+		<section className="my-work-section">
 			<div className="container-center">
 				<div className="my-work-title">
 					<a>My Work</a>
@@ -33,16 +33,48 @@ function Homepage(props) {
 				</div>
 
 				<div className="my-work-projects">
-					<ProjectCard 
-						className="project-card"
-						link={"/projects"}  
-						image={waygoThumbnail}
-						title="Waygo Navigation App" 
-						category="Web/Mobile App" 
-						description="Waygo is a navigation app allowing users to 
-						plan optimal routes, visualize traffic, 
-						find nearby transit, and much more."
-					/>
+					<div className="project-card">
+						<ProjectCard 
+							className="project-card"
+							link={"/projects"}  
+							image={waygoThumbnail}
+							title="Waygo Navigation App" 
+							category="Web/Mobile App" 
+							description="Waygo is a navigation app allowing users to 
+							plan optimal routes, visualize traffic, 
+							find nearby transit, and much more."
+							onClick={ () => {
+								console.log("clicked");
+							} }
+						/>
+					</div>
+					<div className="project-card">
+						<ProjectCard 
+							className="project-card"
+							link={"/projects"}  
+							image={waygoThumbnail}
+							title="Waygo Navigation App" 
+							category="Web/Mobile App" 
+							description="Waygo Navigation App"
+							onClick={ () => {
+								
+							} }
+						/>
+					</div>
+					<div className="project-card">
+						<ProjectCard 
+							className="project-card"
+							link={"/projects"}  
+							image={waygoThumbnail}
+							title="Waygo Navigation App" 
+							category="Web/Mobile App" 
+							description="Waygo Navigation App"
+							onClick={ () => {
+								
+							} }
+						/>
+					</div>
+				
 				</div>
 
 			</div>
