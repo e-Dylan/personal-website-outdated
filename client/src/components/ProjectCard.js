@@ -5,26 +5,30 @@ import '../components-styles/ProjectCard.scss';
 
 /**
  * Props:
- * link=
  * image=
  * title=
  * category=
  * description=
+ * date=
+ * displayCard=
  * 
  * @param {} props 
  */
 
 function ProjectCard(props) {
 	return (
-		<div onClick={props.onClick}>
-			<div className="project-image">
-				<img className="project-image" src={ props.image } alt="Project Image" />
+		<a className="project-card" href={props.href}>
+			<div className="project-image-container">
+				<img src={ props.image } alt="Project Image" />
 			</div>
-			<div className="project-title">{ props.title }</div>
-			<div className="project-category">{ props.category }</div>
-			{/* <div className="project-description">{ props.description }</div> */}
-		</div>
-	)
+			<div className="project-info">
+				<div className="project-title">{ props.title }</div>
+				<div className="project-category">{ props.category }</div>
+				{/* <div className="project-description">{ props.description }</div> */}
+			</div>
+			
+		</a>
+	);
 
 }
 

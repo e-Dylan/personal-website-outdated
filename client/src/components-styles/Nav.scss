@@ -120,6 +120,11 @@ nav {
 			transition: opacity 0.3s ease-in;
 			opacity: 0;
 		}
+
+		a {
+			transition: padding 0s;
+			// padding: 50px 100px; makes nav-links move when switching between mediaquery
+		}
 	}
 	.nav-logo {
 		position: absolute;

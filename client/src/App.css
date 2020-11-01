@@ -8,11 +8,6 @@ body, html, #root, .app, .container {
 	padding: 0px;
 }
 
-.hidden {
-	display: none;
-	opacity: 0;
-}
-
 .nav-logo {
 	width: 20%;
 	height: 20%;
