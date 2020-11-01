@@ -6,6 +6,11 @@
 	transform: translate(-50%, -50%);
 }
 
+.full-screen {
+	width: 100vw;
+	height: 100vh;
+}
+
 .parallax-image {
 	// background-image: url("https://source.unsplash.com/1vv8nw62z0E/2400x1595");
 	background-image: url("https://source.unsplash.com/random");
@@ -32,7 +37,43 @@
 	
 }
 
+.my-work-title {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	a {
+		font-size: 16px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	border-bottom: 1px solid rgba(220, 220, 220, 0.6)
+}
+
 .my-work {
 	background-color: #222;
 
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+}
+
+.my-work-description {
+	font-size: 16px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+// 3 highlight project cards
+.my-work-projects {
+
+}
+
+.container-center {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: 15%;
+	margin-left: 15%;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
