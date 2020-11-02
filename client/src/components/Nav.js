@@ -1,4 +1,7 @@
-import { React } from 'react';
+import React from 'react';
+
+import $ from 'jquery';
+
 
 import '../App.css';
 import '../components-styles/Nav.scss';
@@ -25,7 +28,19 @@ const navSlide = () => {
 
 }
 
-export default function Nav(props) {
+	
+function setLinkActive(e) {
+	const navLinks = document.querySelectorAll(".nav-link");
+
+	navLinks.forEach((link) => {
+		if (link.classList.contains("active"))
+			link.classList.remove("active");
+	});
+
+	e.currentTarget.classList.add("active");
+}
+
+export default function Nav() {
 	return (
 		<nav>
 			<div className="nav-left">
@@ -36,25 +51,28 @@ export default function Nav(props) {
 					<div className="line2"></div>
 					<div className="line3"></div>
 				</div>
-				<div className="nav-logo">
-					<a href="/">Dylan Smith</a>
-				</div>	
 			</div>
 			
-			<ul className="nav-links">
-				<li>
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/projects">Projects</a>
-				</li>
-				<li>
-					<a href="/about">About</a>
-				</li>
-				<li>
-					<a href="/contact">Contact</a>
-				</li>
-			</ul>
+			<div className="nav-link-bar">
+				<ul className="nav-links">
+					<li>
+						<div className="nav-link" id="home-link" dest="home" onClick={setLinkActive.bind(this)}>Home</div>
+					</li>
+					<li>
+						<div className="nav-link" id="projects-link" dest="projects" onClick={setLinkActive.bind(this)}>About</div>
+					</li>
+					<li>
+						<div className="nav-link" id="blog-link" dest="blog" onClick={setLinkActive.bind(this)}>Projects</div>
+					</li>
+					<li>
+						<div className="nav-link" id="about-link" dest="about" onClick={setLinkActive.bind(this)}>Blog</div>
+					</li>
+					<li>
+						<div className="nav-link" id="contact-link" dest="contact" onClick={setLinkActive.bind(this)}>Contact</div>
+					</li>
+				</ul>
+			</div>
+			
 		</nav>
-	)
+	)	
 }

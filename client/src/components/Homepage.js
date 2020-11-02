@@ -2,11 +2,16 @@ import React from "react";
 
 import '../components-styles/Homepage.scss';
 
+import Nav from '../components/Nav';
 import ProjectCard from './ProjectCard';
 
 import waygoThumbnail from '../resources/project_thumbnails/waygo-thumbnail.png';
 import speednetThumbnail from '../resources/project_thumbnails/speed-net-thumbnail.png';
 import weatherAppThumbnail from '../resources/project_thumbnails/weather-app-thumbnail.png';
+
+import linkedinIcon from '../resources/social-icons/linkedin.svg';
+import githubIcon from '../resources/social-icons/github.svg';
+import instagramIcon from '../resources/social-icons/instagram.svg';
 
 import projects from '../projects';
 
@@ -17,25 +22,47 @@ function Homepage(props) {
 			<section className="landing-image-section">
 				<div className="parallax-image full-screen">
 					<div className="image-section-container center">
-						<h1 className="image-header">Dylan Smith</h1>
+						<div className="text">
+							Hello, I'm
+							<span className="text highlight"> Dylan</span>.
+						</div>
+						
 						<br />
-						<h3 className="image-info">Software and electrical engineering projects through research & development.</h3>
+						<div className="text">I'm a software engineer.</div>
+						<div className="main-links">
+							<a href="https://linkedin.com/in/dylan-smith-5b2b971b8">
+								<div className="front-icon">
+									<img src={linkedinIcon} />
+								</div>
+							</a>
+							<a href="https://github.com/e-Dylan">
+							<div className="front-icon">
+									<img src={githubIcon} />
+								</div>
+							</a>
+							<a href="https://instagram.com/dylansmi.th">
+							<div className="front-icon">
+									<img src={instagramIcon} />
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
 
-			<section className="my-work-section">
+			<section className="navbar-section">
+				<Nav />
+			</section>
+
+			<section className="about-section">
 
 				<div className="container-center">
 
-					<div className="my-work-title">
-						<a>My Work</a>
+					<div className="section-title">
+						<a>ABOUT</a>
 					</div>
-					<div className="my-work-description">
-						<a>
-							My curiosity and eagerness fuels my motivation to build with software and engineering.
-							From designing artifical intelligence models to building electric skateboards, my passion is unrivaled in building interesting ideas and learning everything in the process.
-						</a>
+					<div className="about-description">
+						
 					</div>
 				
 				</div>
@@ -43,17 +70,17 @@ function Homepage(props) {
 
 			<section className="my-projects-section">
 				<div className="container-center">
-					<div className="my-work-title">
-						<a>Projects</a>
+					<div className="section-title">
+						<a>PROJECTS</a>
 					</div>
-					<div className="my-work-description">
+					<div className="about-description">
 						<a>
 							My curiosity and eagerness fuels my motivation to build with software and engineering.
 							From designing artifical intelligence models to building electric skateboards, my passion is unrivaled in building interesting ideas and learning everything in the process.
 						</a>
 					</div>
 
-					<div className="my-work-projects">
+					<div className="projects-container">
 
 							<ProjectCard 
 								className="project-card"
@@ -104,6 +131,9 @@ function Homepage(props) {
 				</div>
 			</section>
 			
+			<section className="footer">
+				<div></div>
+			</section>
 		</div>
 	)
 }

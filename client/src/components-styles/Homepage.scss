@@ -17,7 +17,7 @@
 
 .parallax-image {
 	// background-image: url("https://source.unsplash.com/1vv8nw62z0E/2400x1595");
-	background-image: url("https://source.unsplash.com/random");
+	background-image: url("https://source.unsplash.com/collection/4994801/1600x900");
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
@@ -27,9 +27,39 @@
 	display: flex;
 }
 
+.highlight {
+	color: rgb(223, 43, 127) !important;
+}
+
 .image-section-container {
-	h1, h3 {
+	font-weight: 600;
+	.text {
+		text-align: center;
 		color: rgba(220, 220, 220, 1);
+		font-size: 28pt;
+	}
+}
+
+.main-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.front-icon {
+	background-color: rgb(36, 37, 48);
+	padding: 10px;
+	transition: 100ms all ease-in-out;
+	img {
+		filter: invert(100%);
+		width: 24px;
+		height: auto;
+	}
+
+	&:hover {
+		transform: scale(0.9);
+		background-color: rgb(120, 128, 247);
 	}
 }
 
@@ -41,9 +71,15 @@
 	
 }
 
-.my-work-title {
+.navbar-section {
+
+}
+
+.section-title {
 	padding-top: 30px;
 	padding-bottom: 30px;
+	width: 15%;
+	text-align: center;
 
 	a {
 		font-size: 20px;
@@ -55,15 +91,15 @@
 	border-bottom: 2px solid rgba(109, 109, 109, 0.6)
 }
 
-.my-work-section {
-	background-color: rgb(247, 247, 247);
 
-	color: #222;
+.about-section {
+	background-color: #222;
+	color: white;
 	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
 }
 
-.my-work-description {
+.about-description {
 	font-size: 16px;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -72,7 +108,7 @@
 // Row of 3 highlighted project cards.
 
 // Media queries on small width
-.my-work-projects {
+.projects-container {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -80,7 +116,7 @@
 }
 
 @media screen and (max-width: 768px) {
-	.my-work-projects {
+	.projects-container {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -133,11 +169,4 @@
 		font-size: 16px;
 		font-family: "Ubuntu", sans-serif;
 	}
-}
-
-.my-work-section {
-	background-color: #222;
-	color: white;
-	font-family: "Open Sans", sans-serif;
-	font-size: 18px;
 }
