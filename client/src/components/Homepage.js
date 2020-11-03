@@ -1,8 +1,11 @@
 import React from "react";
 
 import '../components-styles/Homepage.scss';
+import '../components-styles/About.scss';
+import '../components-styles/Projects.scss';
 
 import Nav from '../components/Nav';
+import About from '../components/About';
 import ProjectCard from './ProjectCard';
 
 import waygoThumbnail from '../resources/project_thumbnails/waygo-thumbnail.png';
@@ -20,15 +23,15 @@ function Homepage(props) {
 	return (
 		<div className="homepage">
 			<section className="landing-image-section">
-				<div className="parallax-image full-screen">
+				<div className="parallax-image">
 					<div className="image-section-container center">
-						<div className="text">
+						<div className="hello-text">
 							Hello, I'm
-							<span className="text highlight"> Dylan</span>.
+							<span className="hello-text highlight"> Dylan</span>.
 						</div>
 						
 						<br />
-						<div className="text">I'm a software engineer.</div>
+						<div className="hello-text">I'm a software engineer.</div>
 						<div className="main-links">
 							<a href="https://linkedin.com/in/dylan-smith-5b2b971b8">
 								<div className="front-icon">
@@ -55,17 +58,7 @@ function Homepage(props) {
 			</section>
 
 			<section className="about-section">
-
-				<div className="container-center">
-
-					<div className="section-title">
-						<a>ABOUT</a>
-					</div>
-					<div className="about-description">
-						
-					</div>
-				
-				</div>
+				<About />
 			</section>
 
 			<section className="my-projects-section">

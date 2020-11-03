@@ -5,7 +5,7 @@
 }
 
 nav {
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	// justify-content: space-around;
 	// justify-content: space-between;
@@ -134,11 +134,7 @@ nav .active {
 			// padding: 50px 100px; makes nav-links move when switching between mediaquery
 		}
 	}
-	.nav-logo {
-		position: absolute;
-		right: 8%;
-	}
-
+	
 	.burger {
 		display: block;
 	}

@@ -1,23 +1,32 @@
+.homepage {
+	width: 100%;
+}
+
 .center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	// position: absolute;
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50%, -50%);
+	display: block;
+	margin: auto;
 }
 
 .landing-image-section {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 }
 
 .full-screen {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 }
 
 .parallax-image {
 	// background-image: url("https://source.unsplash.com/1vv8nw62z0E/2400x1595");
-	background-image: url("https://source.unsplash.com/collection/4994801/1600x900");
+	// background-image: url("https://source.unsplash.com/featured/?{city}");
+	// background-image: url("https://source.unsplash.com/lZXyGjsRnP0/2400x1800");
+	background-image: url("https://source.unsplash.com/WOYJawECYIA/2400x1800");
+	// background-image: url("https://source.unsplash.com/TGonIT5YeIQ/2400x2999");
 	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
@@ -33,9 +42,9 @@
 
 .image-section-container {
 	font-weight: 600;
-	.text {
+	.hello-text {
 		text-align: center;
-		color: rgba(220, 220, 220, 1);
+		color: rgb(27, 27, 27);
 		font-size: 28pt;
 	}
 }
@@ -89,84 +98,4 @@
 	}
 
 	border-bottom: 2px solid rgba(109, 109, 109, 0.6)
-}
-
-
-.about-section {
-	background-color: #222;
-	color: white;
-	font-family: "Open Sans", sans-serif;
-	font-size: 18px;
-}
-
-.about-description {
-	font-size: 16px;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-// Row of 3 highlighted project cards.
-
-// Media queries on small width
-.projects-container {
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-@media screen and (max-width: 768px) {
-	.projects-container {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-.container-center {
-	// padding-right: 15px;
-	// padding-left: 15px;
-	margin-right: 10%;
-	margin-left: 10%;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.a-button {
-	width: 20%;
-}
-
-.button-dark {
-	background-color: #444;
-	color: white;
-	border-radius: 5px;
-	width: 100%;
-	outline: none;
-	border: none;
-	height: 2rem;
-	transition: 90ms all ease-in-out;
-
-	&:hover {
-		background-color: rgb(52, 72, 116);
-	}
-}
-
-.text-center, .centerX {
-	text-align: center;
-	justify-content: center;
-}
-.projects-buttons {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-top: 50px;
-
-	a {
-		margin: 1.5rem;
-	}
-
-	button {
-		font-size: 16px;
-		font-family: "Ubuntu", sans-serif;
-	}
 }

@@ -1,0 +1,66 @@
+
+// Row of 3 highlighted project cards.
+
+// Media queries on small width
+.projects-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+	.projects-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.container-center {
+	// padding-right: 15px;
+	// padding-left: 15px;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.a-button {
+	width: 20%;
+}
+
+.button-dark {
+	background-color: #444;
+	color: white;
+	border-radius: 5px;
+	width: 100%;
+	outline: none;
+	border: none;
+	height: 2rem;
+	transition: 90ms all ease-in-out;
+
+	&:hover {
+		background-color: rgb(52, 72, 116);
+	}
+}
+
+.text-center, .centerX {
+	text-align: center;
+	justify-content: center;
+}
+.projects-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 50px;
+
+	a {
+		margin: 1.5rem;
+	}
+
+	button {
+		font-size: 16px;
+		font-family: "Ubuntu", sans-serif;
+	}
+}
