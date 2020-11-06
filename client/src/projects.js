@@ -20,7 +20,8 @@ const projects = {
 		image: weatherAppThumbnail,
 		category: "Web/Mobile App",
 		description: "Small weather app widget with animation and icons to be displayed in a browser or mobile app."
-	}
+	},
+	
 }
 
 export default projects;

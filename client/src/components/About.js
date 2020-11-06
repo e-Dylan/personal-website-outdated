@@ -15,6 +15,7 @@ function About(props) {
 
 			<div className="section-title">
 				<a>ABOUT</a>
+				<div className="section-title-underline"></div>
 			</div>
 			<div className="about-icons">
 				<div className="icon-wrapper">
@@ -45,7 +46,6 @@ function About(props) {
 					<div className="portrait-about-me-title">ABOUT ME</div>
 					<div className="portrait-about-me">
 						I'm a software engineer who thrives from creating new ideas and constantly learning new things. I'm currently exploring machine learning, full-stack development, and embedded systems.
-						I am a dedicated lifelong learner with a passion for engineering.
 					</div>
 				</div>
 				<div className="about-me-topics">
@@ -56,9 +56,8 @@ function About(props) {
 				</div>
 			</div>
 			<div className="about-description">
-				123
+				"I love to build things, and I love to learn about just about anything; so I spend my time building projects and learning new things that interest me, while building things that interest me."
 			</div>
-				
 		</div>
 	)
 }

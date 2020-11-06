@@ -17,8 +17,18 @@ import '../components-styles/ProjectCard.scss';
 
 function ProjectCard(props) {
 	return (
-		<a className="project-card" href={props.href}>
+		<div className="project-card" onClick={() => {
+			
+		}}>
 			<div className="project-image-container">
+				<div className="overlay">
+					<div className="image-button">
+						View More
+					</div>
+					<div className="image-title">
+						{props.title}
+					</div>
+				</div>
 				<img src={ props.image } alt="Project Image" />
 			</div>
 			<div className="project-info">
@@ -26,8 +36,9 @@ function ProjectCard(props) {
 				<div className="project-category">{ props.category }</div>
 				{/* <div className="project-description">{ props.description }</div> */}
 			</div>
+		</div>
 			
-		</a>
+		
 	);
 
 }

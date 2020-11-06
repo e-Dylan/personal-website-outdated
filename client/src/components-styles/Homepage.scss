@@ -44,7 +44,8 @@
 	font-weight: 600;
 	.hello-text {
 		text-align: center;
-		color: rgb(27, 27, 27);
+		color: rgb(42, 37, 70);
+		// color: white;
 		font-size: 28pt;
 	}
 }
@@ -62,7 +63,7 @@
 	transition: 100ms all ease-in-out;
 	img {
 		filter: invert(100%);
-		width: 24px;
+		width: 1.6rem;
 		height: auto;
 	}
 
@@ -87,7 +88,7 @@
 .section-title {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	width: 15%;
+	width: 25%;
 	text-align: center;
 
 	a {
@@ -97,5 +98,10 @@
 		margin-bottom: 20px;
 	}
 
-	border-bottom: 2px solid rgba(109, 109, 109, 0.6)
+	.section-title-underline {
+		width: 30%;
+		margin: 10px auto;
+		background-color: rgba(109, 109, 109, 0.6);
+		height: 2px;
+	}
 }

@@ -1,0 +1,62 @@
+
+.contact-section {
+	// background-color: rgb(30, 35, 51);
+}
+
+.contact-area {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 10rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	width: 50%;
+	height: 80%;
+	margin: 0 auto;
+	font-family: "Ubuntu", sans-serif;
+	background-color: white;
+	padding: 3rem 0;
+
+	.form-header {
+		margin: 30px 10px;
+	}
+
+	.contact-input {
+		font-family: "Ubuntu", sans-serif;
+		max-width: 80%;
+		width: 80%;
+		margin: 10px;
+		border: none;
+		border-bottom: 1px solid rgba(61, 61, 61, 0.384);
+		height: 2rem;
+		transition: 300ms all ease;
+
+		&:focus {
+			outline: none;
+			border-bottom: 2px solid rgb(65, 165, 211);
+
+		}	
+	}
+
+	.submit-button {
+		width: 25%;
+		height: 2rem;
+		align-self: flex-start;
+		margin: 20px 10px;
+		background-color: black;
+		color: white;
+		border: none;
+		padding: 0.2rem;
+		border-radius: 3px;
+	}
+
+}
+
+// MY INFO CARD
+.my-info {
+	background: black;
+	width: 50%;
+}
