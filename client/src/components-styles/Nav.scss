@@ -13,6 +13,7 @@ nav {
 	min-height: 6vh;
 	background-color: rgb(41, 41, 61);
 	border-bottom: 2px solid rgba(220, 220, 220, 0.4);
+	z-index: 2230 !important;
 
 	.nav-link {
 		font-family: "Asap", sans-serif;
@@ -58,6 +59,7 @@ nav .active {
 	justify-content: space-around;
 	width: 80%;
 	text-decoration: none;
+	z-index: 200;
 
 	a {
 		text-decoration: none;
@@ -115,7 +117,7 @@ nav .active {
 		top: 0px;
 		left: 0px;
 		height: 100vh;
-		background-color: rgba(220, 220, 220, 0.4);
+		background-color: rgba(105, 105, 105, 0.8);
 		margin: 0px;
 		display: flex;
 		flex-direction: column;

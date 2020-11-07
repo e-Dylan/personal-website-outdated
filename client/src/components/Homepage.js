@@ -8,6 +8,7 @@ import Nav from '../components/Nav';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
+import ProjectDisplay from '../components/ProjectDisplay';
 
 import linkedinIcon from '../resources/social-icons/linkedin.svg';
 import githubIcon from '../resources/social-icons/github.svg';
@@ -16,7 +17,7 @@ import instagramIcon from '../resources/social-icons/instagram.svg';
 function Homepage(props) {
 	return (
 		<div className="homepage">
-			<section className="landing-image-section">
+			<section className="home-section">
 				<div className="parallax-image">
 					<div className="image-section-container center">
 						<div className="hello-text">
@@ -44,6 +45,7 @@ function Homepage(props) {
 							</a>
 						</div>
 					</div>
+					{/* <ProjectDisplay /> testing */}
 				</div>
 			</section>
 
@@ -55,7 +57,7 @@ function Homepage(props) {
 				<About />
 			</section>
 
-			<section className="my-projects-section">
+			<section className="projects-section">
 				<Projects />
 			</section>
 			
@@ -65,7 +67,7 @@ function Homepage(props) {
 
 			<section className="footer">
 				<div className="footer">
-					
+
 				</div>
 			</section>
 		</div>
