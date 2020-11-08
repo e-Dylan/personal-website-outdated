@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { ProjectContext } from '../contexts/ProjectContext';
 
 import '../components-styles/Projects.scss';
+import '../components-styles/ProjectDisplay.scss';
 
 import ProjectCard from '../components/ProjectCard';
-
-import waygoThumbnail from '../resources/project_thumbnails/waygo-thumbnail.png';
-import speednetThumbnail from '../resources/project_thumbnails/speed-net-thumbnail.png';
-import weatherAppThumbnail from '../resources/project_thumbnails/weather-app-thumbnail.png';
+import ProjectDisplay from '../components/ProjectDisplay';
 
 import projects from '../projects';
 
-
 function Projects(props) {
+	const [value, setValue] = useState('one');
+
 	return (
 		<div className="container-center">
 			<div className="section-title">
@@ -19,22 +20,27 @@ function Projects(props) {
 				<div className="section-title-underline"></div>
 			</div>
 
-			<div className="projects-container">
-			
-				{ Object.keys(projects).map((key, index) => {
-					return (
-						<ProjectCard
-							className="project-card"
-							href="/projects"
-							image={projects[key].image}
-							title={projects[key].title}
-							category={projects[key].category} 
-							description={projects[key].description}
-						/>
-					);
-				}) }
+						
+			{/* Global project-display window */}
+			<ProjectContext.Provider value={ {value, setValue} }>
+				<div className="project-display-window">
+					<ProjectDisplay />
+				</div>
+
+				<div className="projects-container">
 				
-			</div>
+					{ Object.keys(projects).map((key, index) => {
+						return (
+							<ProjectCard
+								className="project-card"
+								href="/projects"
+								project={projects[key]}
+							/>
+						);
+					}) }
+					
+				</div>
+			</ProjectContext.Provider>
 
 			<div className="projects-buttons centerX">
 				<a className="a-button" href="/projects">

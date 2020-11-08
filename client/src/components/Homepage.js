@@ -8,7 +8,6 @@ import Nav from '../components/Nav';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
-import ProjectDisplay from '../components/ProjectDisplay';
 
 import linkedinIcon from '../resources/social-icons/linkedin.svg';
 import githubIcon from '../resources/social-icons/github.svg';

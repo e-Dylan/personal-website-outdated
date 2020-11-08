@@ -7,19 +7,25 @@ const projects = {
 		title: "Waygo Navigation App",
 		image: waygoThumbnail,
 		category: "Web/Mobile App" ,
-		description: "Waygo is a navigation app allowing users to plan optimal routes, visualize traffic, find nearby transit, and much more."
+		tech: "React, NodeJS, SCSS, MySQL, REST",
+		description: "Waygo is a navigation app allowing users to plan optimal routes, visualize traffic, find nearby transit, and much more.",
+		"date": "06/12/2020 - Current",
 	},
 	speednet: {
 		title: "Deeplearning Car Speednet",
 		image: speednetThumbnail,
-		category: "Python",
-		description: "AI car speed prediction model in PyTorch using front-facing camera driving data."
+		category: "Machine Learning Algorithm",
+		tech: "Python, PyTorch, Tensorboard",
+		description: "AI car speed prediction model in PyTorch using front-facing camera driving data.",
+		date: "07/15/2020",
 	},
 	weather_app: {
 		title: "Weather App Widget",
 		image: weatherAppThumbnail,
 		category: "Web/Mobile App",
-		description: "Small weather app widget with animation and icons to be displayed in a browser or mobile app."
+		tech: "Javascript, HTML/CSS, API",
+		description: "Small weather app widget with animation and icons to be displayed in a browser or mobile app.",
+		date: "02/21/2017",
 	},
 	
 }

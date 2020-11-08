@@ -1,3 +1,11 @@
+.hidden {
+	opacity: 0;
+	pointer-events: none !important;
+}
+
+.project-display-window {
+	opacity: 1
+}
 
 .projects-section {
 
@@ -39,6 +47,9 @@
 
 	&:hover {
 		background-color: rgb(52, 72, 116);
+	}
+	&:focus {
+		outline: none;
 	}
 }
 
