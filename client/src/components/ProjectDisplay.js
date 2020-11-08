@@ -30,19 +30,18 @@ function ProjectDisplay(props) {
 				<div className="project-display">
 
 					<div className="image-col">
-						<div className="project-image">
-							<img src={value.image} />
-						</div>
+						<img src={value.image} />
 					</div>
 
 					<div className="info-col">
 						<div className="project-info">
-							<div className="title">
+							<div className="title text-section">
 								<div className="project-title">{ value.title }</div>
 								<div className="project-category">{ value.category }</div>
+								<div className="project-date">{ value.date }</div>
 							</div>
 							
-							<div className="description">
+							<div className="description text-section">
 								{ value.description }
 							</div>
 
@@ -57,7 +56,7 @@ function ProjectDisplay(props) {
 								<button className="project-button" onClick={hideProjectDisplay}>Close</button>
 							</div>
 
-							<div className="project-date">{ value.date }</div>
+							{/* <div className="project-date">{ value.date }</div> */}
 							
 						</div>
 					</div>
