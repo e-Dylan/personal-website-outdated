@@ -51,9 +51,9 @@ function ProjectDisplay(props) {
 							</div>
 
 							<div className="project-buttons">
-								<button className="project-button">Live Demo</button>
-								<button className="project-button">Github</button>
-								<button className="project-button" onClick={hideProjectDisplay}>Close</button>
+								<a className="project-button">Live Demo</a>
+								<a className="project-button" href={value.github}>Github</a>
+								<a className="project-button" onClick={hideProjectDisplay}>Close</a>
 							</div>
 
 							{/* <div className="project-date">{ value.date }</div> */}
