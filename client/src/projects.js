@@ -14,7 +14,7 @@ const projects = {
 		"live-demo": "",
 	},
 	speednet: {
-		title: "Deeplearning Car Speednet",
+		title: "Deeplearning Vehicle Speednet",
 		image: speednetThumbnail,
 		category: "Machine Learning Algorithm",
 		tech: "Python, PyTorch, Tensorboard",
