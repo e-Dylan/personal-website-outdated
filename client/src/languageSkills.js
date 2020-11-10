@@ -17,7 +17,7 @@ export const languageSkills = {
 	"Java": {
 		language: "Java",
 		percent: "calc(100% - 20%)", 
-		level: "Advanced"
+		level: "Adept"
 	},
 	"C#": { 
 		language: "C#",

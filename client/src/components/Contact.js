@@ -2,6 +2,10 @@ import React from "react";
 
 import '../components-styles/Contact.scss';
 
+import linkedinIcon from '../resources/social-icons/linkedin.svg';
+import githubIcon from '../resources/social-icons/github.svg';
+import instagramIcon from '../resources/social-icons/instagram.svg';
+
 function Contact(props) {
 	return (
 		<div>
@@ -36,7 +40,39 @@ function Contact(props) {
 						<button className="submit-button">Submit</button>
 					</div>
 					<div className="my-info">
-
+						<div className="text-container">
+							<div className="info-title">
+								dylansmith.vercel.com
+							</div>
+							<div className="info-title">
+								github.com/e-Dylan
+							</div>
+							<div className="info-title">
+								dylansmith@website.com
+							</div>
+						</div>
+						<div className="connected-container">
+							<div className="connected-title">STAY CONNECTED</div>
+							<div className="links-container">
+								<a href="https://linkedin.com/in/dylan-smith-5b2b971b8" className="connected-main-link">
+									<div className="front-icon">
+										<img src={linkedinIcon} />
+									</div>
+								</a>
+								<a href="https://github.com/e-Dylan" className="connected-main-link">
+								<div className="front-icon">
+										<img src={githubIcon} />
+									</div>
+								</a>
+								<a href="https://instagram.com/dylansmi.th" className="connected-main-link">
+									<div className="front-icon">
+										<img src={instagramIcon} />
+									</div>
+								</a>
+							</div>
+							
+						</div>
+						
 					</div>
 				</div>
 				

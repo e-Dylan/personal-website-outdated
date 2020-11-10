@@ -38,7 +38,7 @@ function Homepage(props) {
 								</div>
 							</a>
 							<a href="https://instagram.com/dylansmi.th">
-							<div className="front-icon">
+								<div className="front-icon">
 									<img src={instagramIcon} />
 								</div>
 							</a>
