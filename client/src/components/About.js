@@ -8,6 +8,8 @@ import embeddedIcon from '../resources/about/about_icons/embeddedIcon.png';
 import mobileIcon from '../resources/about/about_icons/mobileIcon.png';
 
 import portraitPhoto from '../resources/about/portraitPhoto.JPG';
+import { languageSkills } from '../languageSkills';
+import { skillsItems } from '../skillsItems';
 
 function About(props) {
 	return (
@@ -40,7 +42,7 @@ function About(props) {
 				</div>
 			</div>
 
-			<div className="about-me-card-container">
+			<div className="about-me-container">
 				<div className="about-me-card">
 					<div className="portrait-column">
 						<img src={portraitPhoto} />
@@ -49,11 +51,39 @@ function About(props) {
 							I'm a software engineer who thrives from creating new ideas and constantly learning new things. I'm currently exploring machine learning, full-stack development, and embedded systems.
 						</div>
 					</div>
-					<div className="about-me-topics">
-						<div className="technologies-languages">
-							<div className="technologies-languages-title">Technologies and Languages</div>
+				</div>
+				<div className="about-me-topics">
+					<div className="technologies-languages">
+						<div className="technologies-languages-title">Technologies and Languages</div>
+						<div className="language-bars">
+		
+							{ Object.keys(languageSkills).map((key, index) => {
+								return (
+									<div className="bar">
+										<div className="bar-filled" style={{width: languageSkills[key].percent}}>
+											<div className="lang-tag">{languageSkills[key].language}</div>
+										</div>
+										<span className="level-tag">{languageSkills[key].level}</span>
+									</div>
+								);
+								
+							}) }
+
 						</div>
-						<div className="skills">Skills</div>
+					</div>
+					
+
+					<div className="skills">
+						<div className="skills-title">Skills</div>
+						<div className="skills-items">
+							{ skillsItems.map(item => {
+								return (
+									<div className="skill-item">
+										{item}
+									</div>
+								)
+							}) }
+						</div>
 					</div>
 				</div>
 			</div>

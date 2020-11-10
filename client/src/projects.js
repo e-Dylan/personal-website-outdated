@@ -33,16 +33,6 @@ const projects = {
 		"github": "https://github.com/e-Dylan/simple-weather-app",
 		"live-demo": "",
 	},
-	weather_app1: {
-		title: "Weather App Widget",
-		image: weatherAppThumbnail,
-		category: "Web/Mobile App",
-		tech: "Javascript, HTML/CSS, API",
-		description: "Small weather app widget with animation and icons to be displayed in a browser or mobile app.",
-		date: "02/21/2017",
-		"github": "https://github.com/e-Dylan/simple-weather-app",
-		"live-demo": "",
-	},
 	
 }
 
