@@ -1,35 +1,39 @@
 
-.about-section {
+.about-me-card {
 	background-color: #fff;
 	color: #222;
 	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
-	padding: 0 300px;
+	padding: 0;
 	// max-width: 1700px;
 }
 
+.about-me-card-container {
+	
+}
+
 @media screen and (max-width: 2000px) {
-	.about-section {
-		padding: 350px;
+	.about-me-card-container {
+		padding: 0 350px;
 	}
 }
 
 @media screen and (max-width: 1600px) {
-	.about-section {
-		padding: 200px;
+	.about-me-card-container {
+		padding: 0 200px;
 	}
 }
 
 @media screen and (max-width: 1300px) {
-	.about-section {
-		padding: 50px;
+	.about-me-card-container {
+		padding: 0 50px;
 	}
 }
 
 
 @media screen and (max-width: 1000px) {
-	.about-section {
-		padding: 20px;
+	.about-me-card-container {
+		padding: 0 20px;
 	}
 }
 

@@ -40,21 +40,24 @@ function About(props) {
 				</div>
 			</div>
 
-			<div className="about-me-card">
-				<div className="portrait-column">
-					<img src={portraitPhoto} />
-					<div className="portrait-about-me-title">ABOUT ME</div>
-					<div className="portrait-about-me">
-						I'm a software engineer who thrives from creating new ideas and constantly learning new things. I'm currently exploring machine learning, full-stack development, and embedded systems.
+			<div className="about-me-card-container">
+				<div className="about-me-card">
+					<div className="portrait-column">
+						<img src={portraitPhoto} />
+						<div className="portrait-about-me-title">ABOUT ME</div>
+						<div className="portrait-about-me">
+							I'm a software engineer who thrives from creating new ideas and constantly learning new things. I'm currently exploring machine learning, full-stack development, and embedded systems.
+						</div>
 					</div>
-				</div>
-				<div className="about-me-topics">
-					<div className="technologies-languages">
-						<div className="technologies-languages-title">Technologies and Languages</div>
+					<div className="about-me-topics">
+						<div className="technologies-languages">
+							<div className="technologies-languages-title">Technologies and Languages</div>
+						</div>
+						<div className="skills">Skills</div>
 					</div>
-					<div className="skills">Skills</div>
 				</div>
 			</div>
+			
 			<div className="about-description">
 				"I love to build things, and I love to learn about just about anything; so I spend my time building projects and learning new things that interest me, while building things that interest me."
 			</div>
