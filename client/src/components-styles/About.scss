@@ -237,24 +237,32 @@
 				padding: 4px;
 				background-color: rgb(189, 53, 87);
 				color: white;
+				transition: 200ms background-color ease-in-out;
+
+				&:hover {
+					transform: scale(1.07);
+					cursor: default;
+					background-color: rgb(240, 128, 156);
+				}
 			}
 		}
 	}
-
 
 }
 
 @media screen and (max-width: 768px) {
 	.about-me-container {
 		flex-direction: column;
-	
-		.about-me-card {
-			width: 90%;
-			align-self: center;
-		}
-		.about-me-topics {
-			width: 90%;
-			margin-top: 20px;
-		}
+	}
+
+	.about-me-card {
+		align-self: center;
+		width: 90%;
+	}
+
+	.about-me-topics {
+		align-self: center;
+		margin-top: 20px;
+		width: 90%;
 	}
 }
