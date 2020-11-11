@@ -34,7 +34,8 @@ function Homepage(props) {
 			color: 0xdcdcdc,
 			color2: 0xff3f81,
 			backgroundColor: 0x30303c,
-		  }))
+			scaleMobile: 0.80,
+		  }));
 		}
 		return () => {
 		  if (vantaEffect) vantaEffect.destroy()
