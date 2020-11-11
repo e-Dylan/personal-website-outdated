@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import '../components-styles/Homepage.scss';
 import '../components-styles/About.scss';
@@ -13,11 +13,39 @@ import linkedinIcon from '../resources/social-icons/linkedin.svg';
 import githubIcon from '../resources/social-icons/github.svg';
 import instagramIcon from '../resources/social-icons/instagram.svg';
 
+// Homepage animation
+import * as THREE from 'three';
+// import BIRDS from 'vanta/dist/vanta.birds.min'
+import GLOBE from 'vanta/dist/vanta.globe.min'
+
 function Homepage(props) {
+
+	const [vantaEffect, setVantaEffect] = useState(0);
+	const myRef = useRef(null);
+
+	useEffect(() => {
+		if (!vantaEffect) {
+		  setVantaEffect(GLOBE({
+			el: myRef.current,
+			THREE: THREE,
+			point: 2,
+			spacing: 17,
+			mouseControls: true,
+			color: 0xdcdcdc,
+			color2: 0xff3f81,
+			backgroundColor: 0x2f2f41,
+		  }))
+		}
+		return () => {
+		  if (vantaEffect) vantaEffect.destroy()
+		}
+	  }, [vantaEffect])
+
+
 	return (
 		<div className="homepage">
 			<section className="home-section">
-				<div className="parallax-image">
+				<div className="parallax-image" ref={myRef}>
 					<div className="image-section-container center">
 						<div className="hello-text">
 							Hello, I'm
