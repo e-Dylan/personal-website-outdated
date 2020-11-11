@@ -33,7 +33,7 @@ function Homepage(props) {
 			mouseControls: true,
 			color: 0xdcdcdc,
 			color2: 0xff3f81,
-			backgroundColor: 0x2f2f41,
+			backgroundColor: 0x30303c,
 		  }))
 		}
 		return () => {
