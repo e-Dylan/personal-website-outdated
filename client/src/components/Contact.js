@@ -42,13 +42,13 @@ function Contact(props) {
 					<div className="my-info">
 						<div className="text-container">
 							<div className="info-title">
-								dylansmith.vercel.com
+								dylansmith.vercel.app
 							</div>
 							<div className="info-title">
 								github.com/e-Dylan
 							</div>
 							<div className="info-title">
-								dylansmith@website.com
+								dylansmith@email.com
 							</div>
 						</div>
 						<div className="connected-container">
