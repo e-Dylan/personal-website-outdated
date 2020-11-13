@@ -77,7 +77,7 @@ function About(props) {
 			</div>
 
 			<div className="about-me-container">
-				<div className="about-me-card" data-aos="fade-right" data-aos-delay="4000" >
+				<div className="about-me-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
 					<div className="portrait-column">
 						<img src={portraitPhoto} />
 						<div className="portrait-about-me-title">ABOUT ME</div>
