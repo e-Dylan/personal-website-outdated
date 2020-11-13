@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import scrollFunction from './Homepage';
 
 import '../components-styles/About.scss';
 
@@ -17,15 +16,13 @@ import { Link } from "react-router-dom";
 
 const aboutAnimations = () => {
 	var skillItems = document.querySelectorAll('.skill-item');
-	var bars = document.querySelectorAll('.bar');
-	// var items = document.querySelectorAll('.skill-item, .bar');
 	window.removeEventListener('scroll', scrollFunction);
 	skillItems.forEach((item, index) => {
 		console.log("changing");
 		if (item.style.animation)
 			item.style.animation = '';
 		else
-			item.style.animation = `aboutFadeFromTop 0.5s ease ${index/25 + 0.07}s`
+			item.style.animation = `aboutFadeFromTop 0.5s ease ${index/21 + 0.1}s`
 			setTimeout(() => {
 				item.style.display = 'flex';
 				item.style.opacity = 1;
@@ -36,50 +33,43 @@ const aboutAnimations = () => {
 
 const scrollFunction = () => {
 	var pos = window.pageYOffset;
-	var topAbout = document.querySelector(".about-section").offsetTop;
+	var topAbout = document.querySelector(".about-section").offsetTop - 300;
 	if (pos > topAbout) {
-		// aboutAnimations();
+		aboutAnimations();
 	}
 }
 
 function About(props) {
-	useEffect(() => {
-		AOS.init({
-			offset: 400,
-			duration: 700,
-			once: true
-		});
-		AOS.refresh();
 
+	useEffect(() => {
 		// scroll event listener
 		window.addEventListener('scroll', scrollFunction)
-
-	}, []);
+	}, [])
 
 	return (
 		<div className="container-center">
 
 			<div className="section-title">
-				<a>ABOUT</a>
-				<div className="section-title-underline"></div>
+				<div data-aos="zoom-in-right" data-aos-duration="600">ABOUT</div>
+				<div data-aos="zoom-in-right" data-aos-duration="600" data-aos-delay="200" className="section-title-underline"></div>
 			</div>
 			<div className="about-icons">
-				<div className="icon-wrapper">
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="0">
 					<img src={mlIcon} />
 					<div className="icon-title">Machine/Deep Learning</div>
 					<div className="icon-subtitle">Python, PyTorch, Tensorflow, Tensorboard</div>
 				</div>
-				<div className="icon-wrapper">
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="100">
 					<img src={fullstackIcon} />
 					<div className="icon-title">Full Stack Development</div>
 					<div className="icon-subtitle">React, Node.js, Express, Docker, MySQL</div>
 				</div>
-				<div className="icon-wrapper">
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="200">
 					<img src={embeddedIcon} />
 					<div className="icon-title">Embedded Systems</div>
 					<div className="icon-subtitle">Python, Arduino, Linux, C++</div>
 				</div>
-				<div className="icon-wrapper">
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="300">
 					<img src={mobileIcon} />
 					<div className="icon-title">Mobile Development</div>
 					<div className="icon-subtitle">Android/iOS, React Native, Java, Kotlin</div>
@@ -98,12 +88,12 @@ function About(props) {
 				</div>
 				<div className="about-me-topics">
 					<div className="technologies-languages">
-						<div className="technologies-languages-title">Technologies and Languages</div>
+						<div className="technologies-languages-title" key="techlangtitle">Technologies and Languages</div>
 						<div className="language-bars">
 		
 							{ Object.keys(languageSkills).map((key, index) => {
 								return (
-									<div className="bar" data-aos="fade-left" data-aos-delay="4000">
+									<div className="bar" data-aos="fade-left" data-aos-delay="4000" key={key}>
 										<div className="bar-filled" style={{width: languageSkills[key].percent}}>
 											<div className="lang-tag">{languageSkills[key].language}</div>
 										</div>
@@ -122,10 +112,10 @@ function About(props) {
 						<div className="skills-items">
 							{ skillsItems.map(item => {
 								return (
-									<div className="skill-item" data-aos="fade-left" data-aos-anchor="#trigger-fade" data-aos-delay="4000">
+									<div className="skill-item" key={item}>
 										{item}
 									</div>
-								)
+								);
 							}) }
 						</div>
 					</div>

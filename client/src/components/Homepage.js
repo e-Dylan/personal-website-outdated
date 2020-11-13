@@ -1,5 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import aboutAnimations from './About';
+
 import '../components-styles/Homepage.scss';
 import '../components-styles/About.scss';
 import '../components-styles/Projects.scss';
@@ -19,10 +24,10 @@ import * as THREE from 'three';
 import GLOBE from 'vanta/dist/vanta.globe.min'
 import { DataTexture2DArray } from "three";
 
-const pronounsArr = ["software engineer", "creator", "student", "programmer", "n innovator"]
-const typingDelay = 300;
-const erasingDelay = 300;
-const newTextDelay = 3500; // delay to begin new text
+const pronounsArr = ["software engineer", "creator", "student", "programmer", "n innovator", "full-stack developer", "self-driving car guy", "machine learning developer"]
+const typingDelay = 250;
+const erasingDelay = 200;
+const newTextDelay = 2000; // delay to begin new text
 var wordIdx = ~~(Math.random() * pronounsArr.length);
 var charIdx = 0;
 
@@ -65,7 +70,15 @@ function Homepage(props) {
 	useEffect(() => {
 		// initialize typing effect
 		if (pronounsArr.length) setTimeout(type, newTextDelay + 250);
-		console.log('started');
+
+		AOS.init({
+			offset: 400,
+			duration: 700,
+			once: true,
+			disable: 'mobile',
+			easing: 'ease-in-out-sine'
+		});
+		AOS.refresh();
 
 		if (!vantaEffect) {
 		  setVantaEffect(GLOBE({

@@ -39,17 +39,18 @@
 }
 
 .button-dark {
-	background-color: #444;
-	color: white;
-	border-radius: 5px;
+	color: rgb(80, 80, 80);
+	border: 1px solid rgb(80, 80, 80);
+	border-radius: 2px;
+	background-color: white;
 	width: 100%;
-	outline: none;
-	border: none;
 	height: 2rem;
-	transition: 90ms all ease-in-out;
+	transition: 100ms all ease-in-out;
 
 	&:hover {
-		background-color: rgb(52, 72, 116);
+		background-color: rgb(70, 77, 94);
+		color: white;
+		transition: 100ms all ease-in-out;
 	}
 	&:focus {
 		outline: none;
