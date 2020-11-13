@@ -23,24 +23,29 @@ function Contact(props) {
 						<div className="form-header" data-aos="slide-right" data-aos-duration="1000" data-aos-anchor=".contact-area">
 							Have any questions or want to get in contact with me?
 						</div>
-						<input 
-							className="contact-input"
-							placeholder="Enter your name"
-							data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" data-aos-anchor=".contact-area"
-						></input>
-						<input
-							type="email" 
-							className="contact-input"
-							placeholder="Enter a valid email address"
-							data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor=".contact-area"
-						></input>
-						<textarea 
-							type="text"
-							className="contact-text-area"
-							placeholder="Enter your message"
-							data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150" data-aos-anchor=".contact-area"
-						></textarea>
-						<button className="submit-button" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor=".contact-area">Submit</button>
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" data-aos-anchor=".contact-area">
+							<input 
+								className="contact-input"
+								placeholder="Enter your name"
+							></input>
+						</div>
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor=".contact-area">
+							<input
+								type="email" 
+								className="contact-input"
+								placeholder="Enter a valid email address"
+							></input>	
+						</div>
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150" data-aos-anchor=".contact-area">
+							<textarea 
+								type="text"
+								className="contact-text-area"
+								placeholder="Enter your message"
+							></textarea>
+						</div>
+						<div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor=".contact-area">
+							<button className="submit-button">Submit</button>
+						</div>
 					</div>
 					<div className="my-info" data-aos="slide-up" data-aos-duration="900" data-aos-anchor=".contact-area">
 						<div className="text-container">
