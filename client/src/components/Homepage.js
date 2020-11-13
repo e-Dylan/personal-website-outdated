@@ -17,6 +17,45 @@ import instagramIcon from '../resources/social-icons/instagram.svg';
 import * as THREE from 'three';
 // import BIRDS from 'vanta/dist/vanta.birds.min'
 import GLOBE from 'vanta/dist/vanta.globe.min'
+import { DataTexture2DArray } from "three";
+
+const pronounsArr = ["software engineer", "creator", "student", "programmer", "n innovator"]
+const typingDelay = 300;
+const erasingDelay = 300;
+const newTextDelay = 3500; // delay to begin new text
+var wordIdx = ~~(Math.random() * pronounsArr.length);
+var charIdx = 0;
+
+const type = () => {
+	const typedTextSpan = document.querySelector(".typed-text");
+	const caretSpan = document.querySelector(".caret");
+
+	if (charIdx < pronounsArr[wordIdx].length) {
+		if (!caretSpan.classList.contains('typing')) caretSpan.classList.add('typing');
+		typedTextSpan.innerHTML += pronounsArr[wordIdx].charAt(charIdx);
+		charIdx++;
+		setTimeout(type, typingDelay);
+	} else {
+		caretSpan.classList.remove('typing');
+		setTimeout(erase, newTextDelay);
+	}
+}
+
+const erase = () => {
+	const typedTextSpan = document.querySelector(".typed-text");
+	const caretSpan = document.querySelector(".caret");
+
+	if (charIdx > 0) {
+		typedTextSpan.innerHTML = " " + pronounsArr[wordIdx].substring(0, charIdx - 1);
+		charIdx--;
+		setTimeout(erase, erasingDelay);
+	} else {
+		caretSpan.classList.remove('typing');
+		wordIdx++;
+		if (wordIdx >= pronounsArr.length) wordIdx = 0;
+		setTimeout(type, typingDelay + 100);
+	}
+}
 
 function Homepage(props) {
 
@@ -24,6 +63,10 @@ function Homepage(props) {
 	const myRef = useRef(null);
 
 	useEffect(() => {
+		// initialize typing effect
+		if (pronounsArr.length) setTimeout(type, newTextDelay + 250);
+		console.log('started');
+
 		if (!vantaEffect) {
 		  setVantaEffect(GLOBE({
 			el: myRef.current,
@@ -54,7 +97,10 @@ function Homepage(props) {
 						</div>
 						
 						<br />
-						<div className="hello-text">I'm a software engineer.</div>
+						<div className="hello-text">I'm a  
+							<span className="typed-text highlight"> </span>
+							<span className="caret">&nbsp;</span>.
+						</div>
 						<div className="main-links">
 							<a href="https://linkedin.com/in/dylan-smith-5b2b971b8">
 								<div className="front-icon">

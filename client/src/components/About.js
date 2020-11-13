@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import '../components-styles/About.scss';
 
@@ -10,8 +13,49 @@ import mobileIcon from '../resources/about/about_icons/mobileIcon.png';
 import portraitPhoto from '../resources/about/portraitPhoto.JPG';
 import { languageSkills } from '../languageSkills';
 import { skillsItems } from '../skillsItems';
+import { Link } from "react-router-dom";
+
+const aboutAnimations = () => {
+	var skillItems = document.querySelectorAll('.skill-item');
+	var bars = document.querySelectorAll('.bar');
+	// var items = document.querySelectorAll('.skill-item, .bar');
+	window.removeEventListener('scroll', scrollFunction);
+	skillItems.forEach((item, index) => {
+		console.log("changing");
+		if (item.style.animation)
+			item.style.animation = '';
+		else
+			item.style.animation = `aboutFadeFromTop 0.5s ease ${index/25 + 0.07}s`
+			setTimeout(() => {
+				item.style.display = 'flex';
+				item.style.opacity = 1;
+				item.style.transform = `translateY(${0}%)`;
+			}, index/25 + 0.07)
+		});
+}
+
+const scrollFunction = () => {
+	var pos = window.pageYOffset;
+	var topAbout = document.querySelector(".about-section").offsetTop;
+	if (pos > topAbout) {
+		// aboutAnimations();
+	}
+}
 
 function About(props) {
+	useEffect(() => {
+		AOS.init({
+			offset: 400,
+			duration: 700,
+			once: true
+		});
+		AOS.refresh();
+
+		// scroll event listener
+		window.addEventListener('scroll', scrollFunction)
+
+	}, []);
+
 	return (
 		<div className="container-center">
 
@@ -43,11 +87,11 @@ function About(props) {
 			</div>
 
 			<div className="about-me-container">
-				<div className="about-me-card">
+				<div className="about-me-card" data-aos="fade-right" data-aos-delay="4000" >
 					<div className="portrait-column">
 						<img src={portraitPhoto} />
 						<div className="portrait-about-me-title">ABOUT ME</div>
-						<div className="portrait-about-me">
+						<div className="portrait-about-me" id="trigger-fade">
 							I'm a software engineer who thrives from creating new ideas and constantly learning new things. I'm currently exploring machine learning, full-stack development, and embedded systems.
 						</div>
 					</div>
@@ -59,7 +103,7 @@ function About(props) {
 		
 							{ Object.keys(languageSkills).map((key, index) => {
 								return (
-									<div className="bar">
+									<div className="bar" data-aos="fade-left" data-aos-delay="4000">
 										<div className="bar-filled" style={{width: languageSkills[key].percent}}>
 											<div className="lang-tag">{languageSkills[key].language}</div>
 										</div>
@@ -78,7 +122,7 @@ function About(props) {
 						<div className="skills-items">
 							{ skillsItems.map(item => {
 								return (
-									<div className="skill-item">
+									<div className="skill-item" data-aos="fade-left" data-aos-anchor="#trigger-fade" data-aos-delay="4000">
 										{item}
 									</div>
 								)
