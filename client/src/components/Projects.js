@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import ScrollAnimation from 'react-animate-on-scroll';
-
 import { ProjectContext } from '../contexts/ProjectContext';
 
 import '../components-styles/Projects.scss';
@@ -18,8 +16,8 @@ function Projects(props) {
 	return (
 		<div className="container-center">
 			<div className="section-title">
-			<ScrollAnimation animateIn="animate__fadeInLeft" duration="0.6" animateOnce="true">PROJECTS</ScrollAnimation>
-				<ScrollAnimation className="section-title-underline" animateIn="animate__fadeInLeft" duration="0.6" delay="500" animateOnce="true"></ScrollAnimation>
+				<div data-aos="zoom-in-right" data-aos-duration="600">PROJECTS</div>
+				<div className="section-title-underline" data-aos="zoom-in-right" data-aos-duration="600" data-aos-delay="200"></div>
 			</div>
 
 						
@@ -45,8 +43,8 @@ function Projects(props) {
 			</ProjectContext.Provider>
 
 			<div className="projects-buttons centerX">
-				<a className="a-button" data-aos="fade-right" href="/projects">
-					<button className="button-dark">View All Projects</button>
+				<a className="a-button" href="/projects">
+					<button className="button-dark" data-aos="fade-right">View All Projects</button>
 				</a>
 				<a className="a-button" data-aos="fade-left" href="https://github.com/e-Dylan">
 					<button className="button-dark">Github</button>

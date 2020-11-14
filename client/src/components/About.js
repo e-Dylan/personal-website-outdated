@@ -13,8 +13,6 @@ import portraitPhoto from '../resources/about/portraitPhoto.JPG';
 import { languageSkills } from '../languageSkills';
 import { skillsItems } from '../skillsItems';
 import { Link } from "react-router-dom";
-import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const aboutAnimations = () => {
 	var skillItems = document.querySelectorAll('.skill-item');
@@ -52,35 +50,34 @@ function About(props) {
 		<div className="container-center">
 
 			<div className="section-title">
-				<ScrollAnimation animateIn="animate__fadeInLeft" duration="0.6">ABOUT</ScrollAnimation>
-				<ScrollAnimation className="section-title-underline" animateIn="animate__fadeInLeft" duration="0.6" delay="500"></ScrollAnimation>
+				<div data-aos="zoom-in-right" data-aos-duration="600">ABOUT</div>
+				<div data-aos="zoom-in-right" data-aos-duration="600" data-aos-delay="200" className="section-title-underline"></div>
 			</div>
 			<div className="about-icons">
-				<ScrollAnimation className="icon-wrapper" animateIn='animate__flipInY' duration="0.8" animateOnce="true" delay="0">
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="0">
 					<img src={mlIcon} />
 					<div className="icon-title">Machine/Deep Learning</div>
 					<div className="icon-subtitle">Python, PyTorch, Tensorflow, Tensorboard</div>
-				</ScrollAnimation>
-				<ScrollAnimation className="icon-wrapper" animateIn='animate__flipInY' duration="0.8" animateOnce="true" delay="100">
+				</div>
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="100">
 					<img src={fullstackIcon} />
 					<div className="icon-title">Full Stack Development</div>
 					<div className="icon-subtitle">React, Node.js, Express, Docker, MySQL</div>
-				</ScrollAnimation>
-				<ScrollAnimation className="icon-wrapper" animateIn='animate__flipInY' duration="0.8" animateOnce="true" delay="200">
+				</div>
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="200">
 					<img src={embeddedIcon} />
 					<div className="icon-title">Embedded Systems</div>
 					<div className="icon-subtitle">Python, Arduino, Linux, C++</div>
-				</ScrollAnimation>
-				<ScrollAnimation className="icon-wrapper" animateIn='animate__flipInY' duration="0.8" animateOnce="true" delay="300">
+				</div>
+				<div className="icon-wrapper" data-aos="flip-right" data-aos-duration="800" data-aos-delay="300">
 					<img src={mobileIcon} />
 					<div className="icon-title">Mobile Development</div>
 					<div className="icon-subtitle">Android/iOS, React Native, Java, Kotlin</div>
-				</ScrollAnimation>
+				</div>
 			</div>
 
 			<div className="about-me-container">
-			{/* data-aos="fade-right" data-aos-duration="800" data-aos-delay="400" */}
-				<ScrollAnimation animateIn='animate__fadeInLeft' duration="1" animateOnce="true" className="about-me-card">
+				<div className="about-me-card" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
 					<div className="portrait-column">
 						<img src={portraitPhoto} />
 						<div className="portrait-about-me-title">ABOUT ME</div>
@@ -88,7 +85,7 @@ function About(props) {
 							I'm a software engineer who thrives from creating new ideas and constantly learning new things. I'm currently exploring machine learning, full-stack development, and embedded systems.
 						</div>
 					</div>
-				</ScrollAnimation>
+				</div>
 				<div className="about-me-topics">
 					<div className="technologies-languages">
 						<div className="technologies-languages-title" key="techlangtitle">Technologies and Languages</div>
@@ -96,12 +93,12 @@ function About(props) {
 		
 							{ Object.keys(languageSkills).map((key, index) => {
 								return (
-									<ScrollAnimation className="bar" duration="1" animateIn='animate__fadeInRight' animateOnce="true" key={key}>
+									<div className="bar" data-aos="fade-left" data-aos-delay="4000" key={key}>
 										<div className="bar-filled" style={{width: languageSkills[key].percent}}>
 											<div className="lang-tag">{languageSkills[key].language}</div>
 										</div>
 										<span className="level-tag">{languageSkills[key].level}</span>
-									</ScrollAnimation>
+									</div>
 								);
 								
 							}) }
