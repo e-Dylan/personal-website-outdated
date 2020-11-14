@@ -111,6 +111,9 @@
 			background-color: rgb(219, 36, 106);
 			color: white;
 		}
+		&:focus {
+			outline: none;
+		}
 	}
 
 }
@@ -165,8 +168,13 @@
 }
 
 @media screen and (max-width: 768px) {
+	.section-title {
+		width: 30%;
+	}
 	.contact-area {
+		display: flex;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 	.contact-form {
@@ -174,15 +182,36 @@
 		padding-top: 0;
 		align-self: center;
 		align-items: center;
+		justify-content: center;
+
+		.anim-div {
+			width: 100%;
+		}
+
+		.form-header {
+			max-width: 100%;
+			margin: 15px 2px;
+		}
+
+		.contact-input {
+			width: 100%;
+			max-width: 100%;
+			margin: 2px 0;
+		}
+
+		.contact-text-area {
+			width: 100%;
+			max-width: 100%;
+			margin: 2px 0;
+		}
+
+		.submit-button {
+			margin: 4px 0;
+		}
+
 	}
 
-	.contact-input {
-		width: 100%;
-	}
-
-	.contact-text-area {
-		width: 100%;
-	}
+	
 
 	.my-info {
 		width: 95%;
