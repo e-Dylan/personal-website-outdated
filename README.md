@@ -1,5 +1,5 @@
 <a href="https://dylansmith.vercel.app/">
-    <img src="/demo/website-logo.gif" alt="Website Logo" title="Logo" align="right" height="60" />
+    <img src="/demo/website-logo.gif" alt="Website Logo" title="Logo" align="right" height="200" />
 </a>
 
 Personal Website / Portfolio<br/>
