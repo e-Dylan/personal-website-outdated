@@ -26,7 +26,7 @@ everything up to date.
 - Contact Me
 
 ### Project Video
-[![YouTube Project Video](https://img.youtube.com/vi/15uXmqjw6vY&t=3s/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+[![YouTube Project Video](https://img.youtube.com/vi/15uXmqjw6vY&t/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
 
 ### Find Me
 [<img align="left" alt="null" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
