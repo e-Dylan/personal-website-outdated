@@ -20,7 +20,7 @@ This also hosts my backend webserver for database processing,
 user authentication, and cron-jobs intended to automatically keep
 everything up to date.
 
-## Content
+### Content
 - About Me
 - Projects
 - Contact Me
