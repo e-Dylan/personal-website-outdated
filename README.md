@@ -2,7 +2,8 @@
     <img src="/demo/website-logo.gif" alt="Website Logo" title="Logo" align="right" height="60" />
 </a>
 
-Dylan Smith - Personal Website / Portfolio<br/>
+Dylan Smith<br/>
+<sub>Personal Website / Portfolio</sub><br/>
 <sub>Software Engineer</sub>
 ==========================================
 
