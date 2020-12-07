@@ -31,6 +31,12 @@ I infrequently document my build-process on YouTube in project videos, watch me 
     <img src="https://img.youtube.com/vi/15uXmqjw6vY/maxresdefault.jpg" alt="YouTube Video" title="Video" height="250" width="450" align="right" />
 </a>
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ### Find Me
 [<img align="left" alt="null" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="null | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
