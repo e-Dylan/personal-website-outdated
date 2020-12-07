@@ -26,9 +26,9 @@ everything up to date.
 - Contact Me
 
 ### Project Video
-[![YouTube Project Video](https://img.youtube.com/vi/15uXmqjw6vY/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+I infrequently document my build-process on YouTube in project videos, watch me build my website:
 <a href="https://youtu.be/T-D1KVIuvjA">
-    <img src="https://img.youtube.com/vi/15uXmqjw6vY/maxresdefault.jpg" alt="YouTube Video" title="Video" height="400" width="550" />
+    <img src="https://img.youtube.com/vi/15uXmqjw6vY/maxresdefault.jpg" alt="YouTube Video" title="Video" height="250" width="450" align="right" />
 </a>
 
 ### Find Me
