@@ -26,7 +26,10 @@ everything up to date.
 - Contact Me
 
 ### Project Video
-[![YouTube Project Video](https://img.youtube.com/vi/15uXmqjw6vY/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
+
+<a href="https://youtu.be/T-D1KVIuvjA">
+    <img src="https://img.youtube.com/vi/15uXmqjw6vY/maxresdefault.jpg" alt="YouTube Video" title="Video" height="400" width="550" />
+</a>
 
 ### Find Me
 [<img align="left" alt="null" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
