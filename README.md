@@ -34,9 +34,7 @@ I infrequently document my build-process on YouTube in project videos, watch me 
 
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
+
 
 ### Find Me
 [<img align="left" alt="null" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
@@ -45,6 +43,7 @@ I infrequently document my build-process on YouTube in project videos, watch me 
 [<img align="left" alt="null | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 [<img align="left" alt="null | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
+<br/>
 <br/>
 
 ### Build:
