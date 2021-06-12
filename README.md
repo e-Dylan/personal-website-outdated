@@ -1,8 +1,8 @@
 <a href="https://dylansmith.vercel.app/">
-    <img src="/demo/website-logo.gif" alt="Website Logo" title="Logo" align="right" height="60" />
+    <img src="/demo/website-logo.gif" alt="Website Logo" title="Logo" align="right" height="375" width="500" />
 </a>
 
-Personal Website / Portfolio<br/>
+Personal Website<br/>Portfolio<br/>
 <sub>Dylan Smith</sub><br/>
 <sub>Software Engineer</sub>
 ==========================================
@@ -20,12 +20,30 @@ This also hosts my backend webserver for database processing,
 user authentication, and cron-jobs intended to automatically keep
 everything up to date.
 
+### Content
+- About Me
+- Projects
+- Contact Me
+
+### Project Video
+I infrequently document my build-process on YouTube in project videos, watch me build my website:
+
+<a href="https://youtu.be/T-D1KVIuvjA">
+    <img src="https://img.youtube.com/vi/15uXmqjw6vY/maxresdefault.jpg" alt="YouTube Video" title="Video" height="250" width="450" />
+</a>
+
+<br/>
+<br/>
+
+
+### Find Me
 [<img align="left" alt="null" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="null | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="null | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="null | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 [<img align="left" alt="null | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
+<br/>
 <br/>
 
 ### Build:
