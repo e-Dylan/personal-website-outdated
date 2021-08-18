@@ -9,7 +9,8 @@ import fullstackIcon from '../resources/about/about_icons/fullstackIcon.png';
 import embeddedIcon from '../resources/about/about_icons/embeddedIcon.png';
 import mobileIcon from '../resources/about/about_icons/mobileIcon.png';
 
-import portraitPhoto from '../resources/about/portraitPhoto.JPG';
+// import portraitPhoto from '../resources/about/portrait_headshot_nyc.jpg';
+import portraitPhoto from '../resources/about/DylanSmith_small.png';
 import { languageSkills } from '../languageSkills';
 import { skillsItems } from '../skillsItems';
 import { Link } from "react-router-dom";
@@ -123,7 +124,7 @@ function About(props) {
 			</div>
 			
 			<div className="about-description">
-				"I love to build things, and I love to learn about just about anything; so I spend my time building projects and learning new things that interest me, while building things that interest me."
+				"I love to build things, and I love to learn about... just about everything."
 			</div>
 		</div>
 	)
